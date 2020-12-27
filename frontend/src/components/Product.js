@@ -13,7 +13,7 @@ const Product = (props) => {
           <a href={`/product/${product}`}>
             <h2>{product.name}</h2>
           </a>
-          <Rating/>
+          <Rating rating={product.rating} numReviews={product.numReviews}/>
           <div className="price">${product.price}</div>
         </div>
       </div>
