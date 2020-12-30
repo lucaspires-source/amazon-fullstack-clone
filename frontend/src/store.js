@@ -1,7 +1,7 @@
 import {applyMiddleware, combineReducers, compose, createStore} from 'redux'
 import thunk from 'redux-thunk'
 import {productListReducer, productDetailsReducer,} from './reducers/productReducer'
-import {cartReducer} from './reducers/cartReducers'
+import {cartReducer} from './reducers/cartReducer'
 
 const initialState = {
     cart: {
