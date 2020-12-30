@@ -54,7 +54,9 @@ ul{
 li{
     margin-top: 1rem;
 }
-
+input,
+select,
+textarea,
 button{
     padding: 1rem;
     border-radius: 0.5rem;
@@ -69,10 +71,15 @@ button{
 button.primary{
 background-color: #f0c040;
 }
-button.primary:hover{
-    background-color: #f0c140e7;
-    transition: 0.2s;
-    border-color: #203040;
+
+    input:hover,
+    select:hover,
+    textarea:hover,
+    button:hover
+    button.primary:hover{
+        background-color: #f0c140e7;
+        transition: 0.2s;
+        border-color: #203040;
     }
 button.block{
     width: 100%;
@@ -173,4 +180,12 @@ color:#a02020;
   .alert-danger {
     color: #a02020;
     background-color: #ffe0e0;
+  }
+  .badge {
+    background-color: #f02020;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.4rem;
+    margin-left: 0.2rem;
   }
