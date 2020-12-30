@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../actions/cartAction";
+import { addToCart,removeFromCart } from "../actions/cartAction";
 import Message from "../components/Message";
 import { Link } from "react-router-dom";
 const CartPage = (props) => {
@@ -17,7 +17,9 @@ const CartPage = (props) => {
     }
   }, [dispatch, productId, qty]);
 
-  const removeFromCartHandler = (id) => {};
+  const removeFromCartHandler = (id) => {
+    dispatch(removeFromCart(id))
+  };
 
   const checkoutHandler = () => {
     props.history.push("/signin?redirect=shipping");
