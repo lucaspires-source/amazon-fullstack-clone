@@ -4,6 +4,7 @@ import CartPage from "./pages/CartPage";
 import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
 import SigninPage from "./pages/SigninPage";
+import RegisterPage from './pages/RegisterPage'
 import { useSelector, useDispatch } from "react-redux";
 import { signout } from "./actions/userAction";
 
@@ -58,6 +59,7 @@ const App = () => {
           <Route path="/product/:id" component={ProductPage} />
           <Route path="/signin" component={SigninPage} />
           <Route path="/cart/:id" component={CartPage} />
+          <Route path="/register" component={RegisterPage} />
         </main>
         <footer className=" row center">All rights reserverd</footer>
       </div>
